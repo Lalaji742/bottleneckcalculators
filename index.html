@@ -3,6 +3,7 @@
 
 <head>
     <meta name="google-site-verification" content="P3uXkW0birrHKI3PUbu_Zfn29FxIIe9D8CJsr63vvQ4" />
+
     <!-- SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,14 @@
     <meta name="description"
         content="Use our advanced Bottleneck Calculator to analyze CPU and GPU performance, detect system limitations, and optimize your PC for top speed. Free & accurate!">
 
-    <!-- DYNAMIC CANONICAL URL (No Errors) -->
+    <!-- CLEAN Dynamic Canonical URL -->
     <link rel="canonical" id="canonicalLink" href="">
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("canonicalLink").setAttribute("href", window.location.href);
+            // Clean URL (no query string, no hash)
+            const cleanUrl = window.location.origin + window.location.pathname;
+            document.getElementById("canonicalLink").setAttribute("href", cleanUrl);
         });
     </script>
 
@@ -65,7 +68,6 @@
             color: #00d4ff;
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #0a0f24, #1b2a49);
             text-align: center;
@@ -100,7 +102,6 @@
             transform: translateY(-3px);
         }
 
-        /* How It Works */
         .how-it-works {
             max-width: 1100px;
             margin: 80px auto;
@@ -140,7 +141,6 @@
             margin-bottom: 10px;
         }
 
-        /* Calculator Section */
         .calculator {
             background: rgba(255, 255, 255, 0.03);
             padding: 80px 20px;
@@ -190,7 +190,6 @@
             background: #00aacc;
         }
 
-        /* Features Section */
         .features {
             max-width: 1100px;
             margin: 100px auto;
@@ -201,7 +200,6 @@
         .features h2 {
             color: #00d4ff;
             margin-bottom: 40px;
-            font-size: 2em;
         }
 
         .feature-grid {
@@ -222,7 +220,6 @@
             transform: translateY(-5px);
         }
 
-        /* FAQ Section */
         .faq {
             background: rgba(255, 255, 255, 0.03);
             padding: 80px 20px;
@@ -253,7 +250,6 @@
             color: #cfd8e3;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
@@ -281,7 +277,6 @@
 
 <body>
 
-    <!-- Header -->
     <header>
         <h1><a href="https://bottleneckcheck.com/">Bottleneck Calculator</a></h1>
         <nav>
@@ -292,7 +287,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h2>Optimize Your PC with the Bottleneck Calculator</h2>
         <p>
@@ -303,7 +297,6 @@
         <a href="https://bottleneckcheck.com/" class="cta" target="_blank">Start Free Analysis</a>
     </section>
 
-    <!-- How It Works -->
     <section class="how-it-works" id="how">
         <h2>How It Works</h2>
         <div class="steps">
@@ -322,7 +315,6 @@
         </div>
     </section>
 
-    <!-- Calculator Section -->
     <section class="calculator" id="calc">
         <h2>Bottleneck Calculator</h2>
         <div class="calc-box">
@@ -340,7 +332,6 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features" id="features">
         <h2>Why Choose Our Tool?</h2>
         <div class="feature-grid">
@@ -359,7 +350,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq" id="faq">
         <h2>FAQs</h2>
         <details>
@@ -376,7 +366,6 @@
         </details>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 Bottleneck Calculator | Designed by YourDomain</p>
     </footer>
