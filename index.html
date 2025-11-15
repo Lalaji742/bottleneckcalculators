@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Bottleneck Calculator | Find & Fix Your PC Performance Bottlenecks">
+    <meta name="description" content="Use our advanced Bottleneck Calculator to analyze CPU and GPU performance, detect system limitations, and optimize your PC for top speed. Free & accurate!">
+    <link rel="canonical" href="https://www.yourdomain.com/{{dynamic-url}}">
+    <title>Bottleneck Calculator | Optimize System Performance 2025</title>
+
+    <!-- Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0a0f24;
+            color: #e5e9f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(10, 15, 36, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            color: #00d4ff;
+            font-size: 1.8em;
+            letter-spacing: 1px;
+        }
+
+        header nav a {
+            color: #e5e9f0;
+            margin-left: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a0f24, #1b2a49);
+            text-align: center;
+            padding: 100px 20px 120px;
+        }
+
+        .hero h2 {
+            font-size: 2.8em;
+            color: #00d4ff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 1.1em;
+            color: #cfd8e3;
+        }
+
+        .hero a.cta {
+            background: #00d4ff;
+            color: #0a0f24;
+            padding: 14px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .hero a.cta:hover {
+            background: #00aacc;
+            transform: translateY(-2px);
+        }
+
+        /* How It Works */
+        .how-it-works {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .how-it-works h2 {
+            text-align: center;
+            color: #00d4ff;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .step:hover {
+            background: rgba(0, 212, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .step h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+
+        /* Calculator Section */
+        .calculator {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .calculator h2 {
+            color: #00d4ff;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .calc-box {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            background: #111c3d;
+            color: #e5e9f0;
+            font-size: 1em;
+        }
+
+        button {
+            background: #00d4ff;
+            color: #0a0f24;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00aacc;
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1100px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .features h2 {
+            color: #00d4ff;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.07);
+            padding: 25px;
+            border-radius: 12px;
+            transition: 0.3s ease;
+        }
+
+        .feature:hover {
+            background: rgba(0, 212, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: rgba(255,255,255,0.03);
+            padding: 80px 20px;
+        }
+
+        .faq h2 {
+            text-align: center;
+            color: #00d4ff;
+            margin-bottom: 40px;
+        }
+
+        details {
+            background: rgba(255,255,255,0.06);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px auto;
+            max-width: 800px;
+            cursor: pointer;
+        }
+
+        details summary {
+            font-weight: 600;
+            color: #00d4ff;
+        }
+
+        details p {
+            margin-top: 10px;
+            color: #cfd8e3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0c112b;
+            color: #ccc;
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+            .step, .calc-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1><a href="https://bottleneckcheck.com/" style="color:#00d4ff; text-decoration:none;">Bottleneck Calculator</a></h1>
+        <nav>
+            <a href="#how">How It Works</a>
+            <a href="#calc">Calculator</a>
+            <a href="#features">Features</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Optimize Your PC with the Bottleneck Calculator</h2>
+        <p>Find and fix performance limitations in your computer setup. Our <a href="https://bottleneckcheck.com/" style="color:#00d4ff;text-decoration:none;">Bottleneck Calculator</a> helps balance your CPU and GPU for maximum gaming and productivity power.</p>
+        <a href="https://bottleneckcheck.com/" target="_blank" class="cta">Try It Free</a>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1️⃣ Enter Hardware</h3>
+                <p>Select your CPU and GPU models to start the analysis.</p>
+            </div>
+            <div class="step">
+                <h3>2️⃣ Calculate Performance</h3>
+                <p>Click “Calculate” to simulate performance and find bottlenecks.</p>
+            </div>
+            <div class="step">
+                <h3>3️⃣ Get Recommendations</h3>
+                <p>Receive upgrade advice and optimization tips instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator" id="calc">
+        <h2>Bottleneck Calculator</h2>
+        <div class="calc-box">
+            <input type="text" placeholder="Enter CPU Model">
+            <input type="text" placeholder="Enter GPU Model">
+            <select>
+                <option>Select Resolution</option>
+                <option>1080p</option>
+                <option>1440p</option>
+                <option>4K</option>
+            </select>
+            <button onclick="window.open('https://bottleneckcheck.com/','_blank')">Calculate Bottleneck</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Why Choose Our Calculator?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>⚙️ Real-Time Analysis</h3>
+                <p>Quickly find which part of your PC is holding you back.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Data-Driven Accuracy</h3>
+                <p>Powered by advanced hardware performance databases.</p>
+            </div>
+            <div class="feature">
+                <h3>🚀 Smart Recommendations</h3>
+                <p>Get the best hardware upgrade suggestions instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What is a bottleneck in a PC?</summary>
+            <p>A bottleneck happens when one component (CPU or GPU) limits the performance of another, reducing overall efficiency.</p>
+        </details>
+        <details>
+            <summary>Is this Bottleneck Calculator free?</summary>
+            <p>Yes! It’s 100% free to use for all users, gamers, and PC enthusiasts.</p>
+        </details>
+        <details>
+            <summary>How accurate is this tool?</summary>
+            <p>It uses data from real-world performance benchmarks to deliver reliable and precise results.</p>
+        </details>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Bottleneck Calculator | Designed by <a href="https://www.yourdomain.com">YourDomain</a></p>
+    </footer>
+
+</body>
+</html>
